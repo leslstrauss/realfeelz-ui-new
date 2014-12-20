@@ -1,0 +1,34 @@
+Alias: create redirects to apps:create
+Usage: heroku apps:create [NAME]
+
+ create a new app
+
+     --addons ADDONS        # a comma-delimited list of addons to install
+ -b, --buildpack BUILDPACK  # a buildpack url to use for this app
+ -n, --no-remote            # don't create a git remote
+ -r, --remote REMOTE        # the git remote to create, default "heroku"
+ -s, --stack STACK          # the stack on which to create the app
+     --region REGION        # specify region for this app to run in
+ -l, --locked               # lock the app
+
+Examples:
+
+ $ heroku apps:create
+ Creating floating-dragon-42... done, stack is cedar
+ http://floating-dragon-42.heroku.com/ | git@heroku.com:floating-dragon-42.git
+
+ $ heroku apps:create -s bamboo
+ Creating floating-dragon-42... done, stack is bamboo-mri-1.9.2
+ http://floating-dragon-42.herokuapp.com/ | git@heroku.com:floating-dragon-42.git
+
+ # specify a name
+ $ heroku apps:create example
+ Creating example... done, stack is cedar
+ http://example.heroku.com/ | git@heroku.com:example.git
+
+ # create a staging app
+ $ heroku apps:create example-staging --remote staging
+
+ # create an app in the eu region
+ $ heroku apps:create --region eu
+

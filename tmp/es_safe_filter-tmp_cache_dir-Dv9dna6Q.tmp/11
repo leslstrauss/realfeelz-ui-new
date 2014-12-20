@@ -1,0 +1,17 @@
+import Ember from 'ember';
+
+export default Ember.View.extend({
+	didInsertElement: function() {
+		Ember.$(document).ready(function() {
+			Ember.$('.slideshow.bg-image.flicker-theme-light.animate-transform-slide').flickerplate({
+				auto_flick: true,
+				flick_animation: 'transform-slide',
+				block_text: true,
+				dot - navigation = "false",
+				block - text = "true",
+				auto - flick - delay = "4",
+				flick - position = "1"
+			});
+		});
+	}
+});

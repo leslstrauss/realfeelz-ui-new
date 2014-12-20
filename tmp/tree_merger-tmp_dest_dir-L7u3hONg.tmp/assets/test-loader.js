@@ -1,0 +1,1 @@
+/Users/lesliestrauss/Code/RealFeelz/realfeelz-ui/bower_components/ember-cli-test-loader/test-loader.js

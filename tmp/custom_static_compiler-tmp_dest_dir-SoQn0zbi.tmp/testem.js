@@ -1,0 +1,1 @@
+/Users/lesliestrauss/Code/RealFeelz/realfeelz-ui/node_modules/ember-cli/lib/broccoli/testem.js

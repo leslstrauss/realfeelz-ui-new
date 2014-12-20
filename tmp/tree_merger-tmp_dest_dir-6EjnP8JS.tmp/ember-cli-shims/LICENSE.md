@@ -1,0 +1,1 @@
+/Users/lesliestrauss/Code/RealFeelz/realfeelz-ui/tmp/custom_static_compiler-tmp_dest_dir-eKAIj3k2.tmp/ember-cli-shims/LICENSE.md

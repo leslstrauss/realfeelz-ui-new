@@ -1,0 +1,4 @@
+module('JSHint - views');
+test('views/flick-view.js should pass jshint', function() { 
+  ok(false, 'views/flick-view.js should pass jshint.\nviews/flick-view.js: line 10, col 32, Expected \':\' and instead saw \'=\'.\nviews/flick-view.js: line 11, col 28, Duplicate key \'block_text\'.\nviews/flick-view.js: line 11, col 28, Expected \':\' and instead saw \'=\'.\nviews/flick-view.js: line 12, col 28, Duplicate key \'auto_flick\'.\nviews/flick-view.js: line 12, col 28, Expected \':\' and instead saw \'-\'.\nviews/flick-view.js: line 13, col 32, Expected \':\' and instead saw \'=\'.\nviews/flick-view.js: line 12, col 30, \'delay\' is not defined.\n\n7 errors'); 
+});

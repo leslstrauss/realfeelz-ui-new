@@ -1,71 +1,57 @@
+{{view 'fullpage-view'}}
 
-  <div class="form-statments">
-  <div class="row">
-    <div class="small-12 medium-12 large-12 columns">
-      <form {{action "postStatement" newPost on="submit"}}>
-        {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
-        <div id="recaptcha"></div>
-        <div class="status-text">
-          {{#if verifyingCaptcha}}
-          <p>Verifying Captcha...</p>
-          {{/if}}
-          {{#if showingCaptcha}}
-          <p>Getting a Captcha...</p>
-          {{/if}}
-          {{#if captchaVerified }}
-          {{!-- <p>Now that we know you are a human, hit post again to share.</p> --}}
-        </div>
-        {{/if}}
-        {{#if tryAgain}}
-          <p>Try again...</p>
-        {{/if}}
-        <div class="flexcontainer">
-          <div id="post" class="small-12 medium-12 large-12 columns flexcenter">
-            <button class="button radius" type="submit">Post</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  </div>
+  <img src="assets/images/locks.jpg" id="bg" alt="">
+  <div id="page-wrap">
+
+{{!--   <div class="row">
+    <div class="small-12 medium-12 large-12 columns"> --}}
+      <div class="form-statments">
+{{!--         <div class="row">
+          <div class="small-12 medium-12 large-12 columns"> --}}
+            <form {{action "postStatement" newPost on="submit"}}>
+              {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+              <div id="recaptcha"></div>
+              <div class="status-text">
+                {{#if verifyingCaptcha}}
+                <p>Verifying Captcha...</p>
+                {{/if}}
+                {{#if showingCaptcha}}
+                <p>Getting a Captcha...</p>
+                {{/if}}
+                {{#if captchaVerified }}
+                {{!-- <p>Now that we know you are a human, hit post again to share.</p> --}}
+              </div>
+              {{/if}}
+              {{#if tryAgain}}
+              <p>Try again...</p>
+              {{/if}}
+              <div class="flexcontainer">
+                <div id="post" class="small-12 medium-12 large-12 columns flexcenter">
+                  <button class="button radius" type="submit">Post</button>
+                </div>
+              </div>
+            </form>
+          {{!-- </div>
+        </div> --}}
+      </div>
+{{!--     </div>
+  </div> --}}
 
   <div class="statement-container">
-    <div class="row">
-      <div class="small-12 medium-12 large-12 columns panel radius">
+{{!--     <div class="row">
+      <div class="small-12 medium-12 large-12 columns panel radius"> --}}
         <ul>
-        {{#each}}
+          {{#each}}
           <p class="truths panel radius">{{body}}</p>
-        {{/each}}
+          {{/each}}
         </ul>
+        <hr/>
+{{!--         <div class="row">
+          <div class="small-12 medium-12 large-12 columns"> --}}
+            <p id="copyright">{{#link-to 'index'}}©RealFeelz 2014{{/link-to}}</p>
+         {{!--  </div>
+        </div> --}}
       </div>
-    </div>
-  </div>
-</body>
-
-<footer class="row">
-  <div class="small-12 medium-12 large-12 columns">
-    <hr/>
-    <div class="flexcenter">
-      <div class="small-6 medium-6 large-6 columns">
-        <p id="copyright">{{#link-to 'index'}}©RealFeelz 2014{{/link-to}}</p>
-      </div>
-{{!--       <div class="small-6 medium-6 large-6 columns">
-        <ul class="inline-list">
-          <li><a href="#">{{#link-to 'about'}}About{{/link-to}}</a></li>
-          <li><a href="#">{{#link-to 'index'}}Home{{/link-to}}</a></li>
-        </ul>
-      </div> --}}
-    </div>
-  </div>
-</footer>
-
-
-{{!-- {{#view "magellan"}}
-<div data-magellan-expedition="fixed">
-  <ul class="sub-nav">
-    <li data-magellan-arrival="build"><a href="#build">Build with HTML</a></li>
-    <li data-magellan-arrival="js"><a href="#js">Arrival 2</a></li>
-  </ul>
+{{!--     </div>
+  </div> --}}
 </div>
-{{/view}} --}}
-

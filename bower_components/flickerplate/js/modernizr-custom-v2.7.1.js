@@ -1,5 +1,5 @@
 /* Modernizr 2.7.1 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-opacity-rgba-textshadow-cssanimations-cssgradients-csstransforms-csstransforms3d-csstransitions-canvas-canvastext-touch-shiv-cssclasses-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
+ * Build: http: //modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-opacity-rgba-textshadow-cssanimations-cssgradients-csstransforms-csstransforms3d-csstransitions-canvas-canvastext-touch-shiv-cssclasses-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
  */
 ;
 
@@ -43,7 +43,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     slice = classes.slice,
 
-    featureName, 
+    featureName,
 
 
     injectElementWithStyles = function( rule, callback, nodes, testnames ) {
@@ -132,7 +132,7 @@ window.Modernizr = (function( window, document, undefined ) {
       };
     }
     else {
-      hasOwnProp = function (object, property) { 
+      hasOwnProp = function (object, property) {
         return ((property in object) && is(object.constructor.prototype[property], 'undefined'));
       };
     }
@@ -382,7 +382,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
        }
 
-       return Modernizr; 
+       return Modernizr;
      };
 
 

@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.View.extend({
-	didInsertElement: function() {
-		Ember.$(document).ready(function() {
+			didInsertElement: function() {
+					Ember.$(document).ready(function() {
 			Ember.$('.slideshow.bg-image.flicker-theme-light.animate-transform-slide').flickerplate({
 				auto_flick: true,
 				flick_animation: 'transform-slide',

@@ -17,7 +17,7 @@ See an example below of a basic include.
 	<script src="js/min/jquery-v1.10.2.min.js"></script>
 	<script src="js/min/modernizr-custom-v2.7.1.min.js"></script>
 	<script src="js/min/hammer-v2.0.3.min.js"></script>
-	
+
 	<!--Flickerplate-->
 	<script src="js/min/flickerplate.min.js"></script>
 	<link href="css/flickerplate.css" rel="stylesheet" type="text/css">

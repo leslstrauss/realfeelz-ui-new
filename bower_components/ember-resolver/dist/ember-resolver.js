@@ -2,11 +2,11 @@
 // Project:   Ember - JavaScript Application Framework
 // Copyright: Copyright 2013 Stefan Penner and Ember App Kit Contributors
 // License:   Licensed under MIT license
-//            See https://raw.github.com/stefanpenner/ember-jj-abrams-resolver/master/LICENSE
+//            See https://raw.github.com/stefanpenner/ember-resolver/master/LICENSE
 // ==========================================================================
 
 
- // Version: 0.1.5
+ // Version: 0.1.11
 
 (function() {
 /*globals define registry requirejs */
@@ -126,7 +126,7 @@ define("ember/resolver",
   function resolveOther(parsedName) {
     /*jshint validthis:true */
 
-    Ember.assert('module prefix must be defined', this.namespace.modulePrefix);
+    Ember.assert('`modulePrefix` must be defined', this.namespace.modulePrefix);
 
     var normalizedModuleName = this.findModuleName(parsedName);
 
@@ -164,6 +164,7 @@ define("ember/resolver",
     },
     init: function() {
       this._super();
+      this.moduleBasedResolver = true;
       this._normalizeCache = makeDictionary();
 
       this.pluralizedTypes = this.pluralizedTypes || makeDictionary();
@@ -324,6 +325,7 @@ define("ember/resolver",
     }
   });
 
+  Resolver.moduleBasedResolver = true;
   Resolver['default'] = Resolver;
   return Resolver;
 });

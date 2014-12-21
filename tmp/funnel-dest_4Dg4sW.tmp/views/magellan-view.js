@@ -1,0 +1,1 @@
+/Users/lesliestrauss/Code/RealFeelz/realfeelz-ui-new/app/views/magellan-view.js

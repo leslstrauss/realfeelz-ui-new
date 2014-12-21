@@ -6537,134 +6537,94 @@ td, th {
       color: black;
       opacity: 0.75; }
 
-* {
-  margin: 0;
-  padding: 0; }
+body {
+  background-color: white; }
 
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0; }
+.wrapper {
+  margin: 0px;
+  padding: 0px; }
 
-.bgwidth {
-  width: 100%; }
-
-.bgheight {
-  height: 100%; }
-
-#page-wrap {
-  position: relative;
-  width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  background: white;
-  -moz-box-shadow: 0 0 20px black;
-  -webkit-box-shadow: 0 0 20px black;
-  box-shadow: 0 0 20px black; }
-
-p {
-  font: 15px/2 Georgia, Serif;
-  margin: 0 0 30px 0;
-  text-indent: 40px; }
-
-a {
-  color: #ffffff !important; }
-
-.flicks {
-  -webkit-transform: translate3d(-1%, 0, 0);
-  -o-transform: translate3d(-1%, 0, 0);
-  -moz-transform: translate3d(-1%, 0, 0);
-  transform: translate3d(-1%, 0, 0); }
-
-.flickerplate {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: 100%;
-  background-image: url("img/background.jpg") no-repeat center center fixed;
+#header {
+  min-height: 400px;
+  background: url('http://epsolutions.centraldesktop.com/referralinformation/media/Desktop%20Template.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  z-index: 0;
-  overflow: hidden; }
+  background-size: cover; }
 
-hr {
-  margin-top: 0px; }
+#header h1 {
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px; }
 
-body {
-  background-color: #2F3E46; }
+#nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9995;
+  text-align: center;
+  color: white;
+  background-color: rgba(50, 50, 50, 0.75); }
 
-.statement-container {
-  margin-left: 10px;
-  margin-right: 10px; }
+#nav a {
+  color: white; }
 
-#title-containter {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-#truth-containter {
-  padding: 0px;
+#nav ul {
+  list-style-type: none;
+  text-align: center;
+  height: 100%;
   margin: 0px; }
 
-footer {
-  text-align: center; }
-
-h3 {
-  text-align: center; }
-
-#recaptcha_area, #recaptcha_table {
-  margin: 0 auto !important;
-  margin-bottom: 1em !important; }
-
-.truths {
-  font-size: 1em;
-  font-family: "Lato", sans-serif;
+#nav ul li {
+  display: inline-block;
+  padding: 10px 20px;
+  height: 100%;
   font-weight: bold; }
 
-textarea {
-  margin-top: 20px;
-  margin-bottom: 0px; }
+#nav ul li.toggle {
+  display: none;
+  text-align: right; }
 
-button {
-  margin-top: 20px !important; }
+#nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
 
-ul {
-  text-align: center !important;
-  list-style-type: none;
-  margin-left: 0px; }
+section {
+  margin: 0;
+  padding: 40px 0; }
 
-p {
-  text-align: center;
-  font-family: 'Pacific', 'Open Sans', 'sans-serif';
-  font-weight: bold;
-  margin: 0px !important;
-  border-bottom: 0px !important; }
+section h2 {
+  text-align: center; }
 
-.flexcenter {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  /* works with row or column */
-  flex-direction: row;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center; }
+section h3 a {
+  color: #222; }
 
-.flexcontainer {
-  display: -webkit-flex;
-  display: flex; }
+section h3 a:hover {
+  color: #444; }
 
-.flexrow {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row; }
+section .row i {
+  font-size: 2em; }
 
-.flexcolumn {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
+section:nth-child(even) {
+  background: #EFEFEF; }
+
+section:nth-child(odd) {
+  background: #FFFFFF; }
+
+#footer {
+  padding: 20px; }
+
+ul.center {
+  display: block;
+  margin: auto; }
+
+@media only screen and (max-width: 40em) {
+  #nav ul li {
+    display: none; }
+
+  #nav ul li.toggle {
+    display: block; }
+ }

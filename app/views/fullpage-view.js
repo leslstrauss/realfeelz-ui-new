@@ -1,9 +1,10 @@
 import Ember from 'ember';
+var $ = Ember.$;
 
 export default Ember.View.extend({
 	didInsertElement: function() {
-		Ember.$(document).ready(function() {
-			Ember.$(function() {
+		$(document).ready(function() {
+			$(function() {
 
 				var theWindow = $(window),
 					$bg = $("#bg"),

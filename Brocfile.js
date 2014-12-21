@@ -20,17 +20,18 @@ var app = new EmberApp();
 // app.import('vendor/captcha/captcha.js');
 app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
-app.import('bower_components/slick.js/slick/slick.js');
-
 app.import('bower_components/flickerplate/js/flickerplate.js');
-
 app.import('bower_components/flickerplate/js/jquery-v1.10.2.js');
-
 app.import('bower_components/flickerplate/js/modernizr-custom-v2.7.1.js');
-
 app.import('bower_components/flickerplate/css/flickerplate.css');
-
-// app.import('bower_components/foundation/js/foundation/foundation.magellan.js');
 // app.import('bower_components/flickerplate/js/hammer-v2.0.3.js');
-//
+
+app.import('bower_components//bower_components/foundation/js/foundation.js');
+
+app.import('bower_components/bower_components/polymer/polymer.js');
+app.import('bower_components/bower_components/polymer/polymer.js');
+app.import('bower_components/bower_components/webcomponentsjs/webcomponents.js');
+
+// app.import('bower_components/slick.js/slick/slick.js');
+
 module.exports = app.toTree()

@@ -2,13 +2,9 @@
 
 <img src="https://ununsplash.imgix.net/reserve/D9xlw7UxTBqQw5sLf8cJ_reef%20insp-72.jpg?q=75&fm=jpg&s=a46f72e373f7af2b3bba993f565e24be" id="bg" alt="">
 
-<div class="row panel radius">
-<div class="small-9 medium-9 large-9 columns">
-
-<div id="page-wrap" style="background: none;">
+<div id="page-wrap" class="row panel radius small-8 medium-8 large-8 centered-columns" style="background: none;">
 
   {{!-- <div class="small-10 medium-10 large-10 columns"> --}}
-
     <form {{action "postStatement" newPost on="submit" }}>
         {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
         <div id="recaptcha"></div>
@@ -23,26 +19,27 @@
             <p>Try again...</p>
           {{/if}}
         </div>
-        <div class="row">
-        <div class="small-10 medium-10 large-10 columns">
+        {{!-- <div class="row"> --}}
+        {{!-- <div class="small-10 medium-10 large-10 columns"> --}}
           <button class="button radius" type="submit">Post</button>
-        </div>
-        </div>
+        {{!-- </div> --}}
+        {{!-- </div> --}}
     </form>
-{{!--     </div>
-    </div>
-    </div> --}}
+  {{!-- </div> --}}
+
     <div class="statement-container">
-    <div class="row">
-      <div class="small-12 medium-12 large-12 columns panel">
-        <ul class="panel">
-          {{#each}}
-          <p class="truths">{{body}}</p>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-    </div>
+ {{!--      <div class="row">
+        <div class="small-10 medium-10 large-10 columns panel"> --}}
+          <ul class="panel">
+            {{#each}}
+            <p class="truths">{{body}}</p>
+            {{/each}}
+          </ul>
+{{!--         </div>
+      </div> --}}
+    {{!-- </div> --}}
+
+
 
   </div>
 

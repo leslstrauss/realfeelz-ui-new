@@ -2,9 +2,12 @@
 
 <img src="https://ununsplash.imgix.net/reserve/D9xlw7UxTBqQw5sLf8cJ_reef%20insp-72.jpg?q=75&fm=jpg&s=a46f72e373f7af2b3bba993f565e24be" id="bg" alt="">
 
-<div id="page-wrap" class="row panel radius" style="background: none;">
+<div class="row panel radius">
+<div class="small-9 medium-9 large-9 columns">
 
-  <div class="small-12 medium-12 large-12 columns">
+<div id="page-wrap" style="background: none;">
+
+  {{!-- <div class="small-10 medium-10 large-10 columns"> --}}
 
     <form {{action "postStatement" newPost on="submit" }}>
         {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
@@ -21,12 +24,14 @@
           {{/if}}
         </div>
         <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
+        <div class="small-10 medium-10 large-10 columns">
           <button class="button radius" type="submit">Post</button>
         </div>
         </div>
     </form>
+{{!--     </div>
     </div>
+    </div> --}}
     <div class="statement-container">
     <div class="row">
       <div class="small-12 medium-12 large-12 columns panel">
@@ -45,7 +50,7 @@
 
 <hr/>
 <div class="row">
-  <div class="small-12 medium-12 large-12 columns">
+  <div class="small-10 medium-10 large-10 columns">
     <p id="copyright">{{#link-to 'index'}}©RealFeelz 2014{{/link-to}}</p>
   </div>
 </div>

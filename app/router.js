@@ -9,6 +9,7 @@ Router.map(function() {
 	this.route('whatsreal');
 	this.route('about');
 	this.route('onepage');
+  this.route('fullpage');
 });
 
 export default Router;

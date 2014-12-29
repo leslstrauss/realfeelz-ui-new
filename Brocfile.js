@@ -22,16 +22,14 @@ app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
 app.import('bower_components/foundation/js/foundation.js');
 
-// app.import('bower_components/modernizr/modernizr.js');
+app.import('bower_components/modernizr/modernizr.js');
 
-// app.import('bower_components/flickerplate/js/flickerplate.js');
-// app.import('bower_components/flickerplate/js/jquery-v1.10.2.js');
-// app.import('bower_components/flickerplate/js/modernizr-custom-v2.7.1.js');
-// app.import('bower_components/flickerplate/css/flickerplate.css');
+app.import('bower_components/flickerplate/js/flickerplate.js');
+app.import('bower_components/flickerplate/js/jquery-v1.10.2.js');
+app.import('bower_components/flickerplate/js/modernizr-custom-v2.7.1.js');
+app.import('bower_components/flickerplate/css/flickerplate.css');
 
-app.import('bower_components/onepage-scroll/jquery.onepage-scroll.js');
-app.import('bower_components/onepage-scroll/onepage-scroll.css');
-
-// app.import('bower_components/jquery/dist/jquery.js');
+// app.import('bower_components/onepage-scroll/jquery.onepage-scroll.js');
+// app.import('bower_components/onepage-scroll/onepage-scroll.css');
 
 module.exports = app.toTree()

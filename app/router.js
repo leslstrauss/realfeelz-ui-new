@@ -8,7 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 	this.route('whatsreal');
 	this.route('about');
-	this.route('test');
+	this.route('onepage');
 });
 
 export default Router;

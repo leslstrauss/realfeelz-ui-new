@@ -1,5 +1,4 @@
 {{view 'whatsreal-view'}}
-
 <div id="footer">
   <form {{action "postStatement" newPost on="submit" }}>
     {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
@@ -20,14 +19,13 @@
 </div>
 
 <div id="fullpage">
-
   <div class="section " id="section0">
-    <div class="slide" id="slide1">
+    {{!-- <div class="slide" id="slide1"> --}}
       <div class="intro">
         <h1>RealFeelz</h1>
         <p>Anonymously share your true self</p>
       </div>
-    </div>
+    {{!--     </div>
     <div class="slide" id="slide2">
     </div>
     <div class="slide" id="slide3">
@@ -35,11 +33,12 @@
     <div class="slide" id="slide4">
     </div>
     <div class="slide" id="slide5">
-    </div>
+    </div> --}}
   </div>
 
   <div class="section" id="section2">
-    <div class="statement-container">
+    <img src="https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6" id="bg" alt="">
+    <div id="page-wrap" class="small-12 medium-10 large-8 centered-columns">
       <ul>
         {{#each}}
         <p class="truths">{{body}}</p>
@@ -48,10 +47,9 @@
     </div>
   </div>
 
-  <div class="section" id="section3">
+{{!--   <div class="section" id="section3">
     <div class="intro">
       <h1>About</h1>
     </div>
-  </div>
-
+  </div> --}}
 </div>

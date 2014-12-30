@@ -4,7 +4,7 @@ export default Ember.View.extend({
   didInsertElement: function() {
     Ember.$(document).ready(function() {
       Ember.$('#fullpage').fullpage({
-        sectionsColor: ['#4884A9', '#7D37A9', '#666666'],
+        // sectionsColor: ['#4884A9', '#7D37A9', '#666666'],
         //Navigation
         // menu: false,
         anchors:['realfeelz', 'application', 'about'],
@@ -19,7 +19,7 @@ export default Ember.View.extend({
         //Scrolling
         // scrollingSpeed: 0,
         css3: true,
-        // autoScrolling: false,
+        autoScrolling: false,
         // scrollBar: false,
         // easing: 'easeInQuart',
         // easingcss3: 'ease',

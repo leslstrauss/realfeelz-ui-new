@@ -8,8 +8,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 	this.route('whatsreal');
 	this.route('about');
-	this.route('onepage');
   this.route('fullpage');
+	this.route('sticky');
 });
 
 export default Router;

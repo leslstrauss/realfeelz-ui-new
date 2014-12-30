@@ -6347,6 +6347,9 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
+body {
+  color: #000000; }
+
 /* Style for our header texts
 * --------------------------------------- */
 h1 {
@@ -6370,7 +6373,6 @@ h1 {
   position: fixed;
   display: block;
   width: 100%;
-  background: #333;
   z-index: 9;
   text-align: center;
   color: #f2f2f2;

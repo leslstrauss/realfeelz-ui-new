@@ -1,29 +1,63 @@
 import Ember from 'ember';
-var $ = Ember.$;
 
 export default Ember.View.extend({
-	didInsertElement: function() {
-		$(document).ready(function() {
-			$(function() {
-				var theWindow = $(window),
-					$bg = $("#bg"),
-					aspectRatio = $bg.width() / $bg.height();
+  didInsertElement: function() {
+    Ember.$(document).ready(function() {
+      Ember.$('#fullpage').fullpage({
+        sectionsColor: ['#4884A9', '#7D37A9', '#666666'],
+        //Navigation
+        // menu: false,
+        anchors:['realfeelz', 'application', 'about'],
+        // navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide', 'Third and last page'],
+        // slidesNavigation: true,
+        // slidesNavPosition: 'bottom',
 
-				function resizeBg() {
-					if ((theWindow.width() / theWindow.height()) < aspectRatio) {
-						$bg
-							.removeClass()
-							.addClass('bgheight');
-					} else {
-						$bg
-							.removeClass()
-							.addClass('bgwidth');
-					}
-				}
-				theWindow.resize(function() {
-					resizeBg();
-				}).trigger("resize");
-			});
-		});
-	}
+        responsive: 900,
+
+        //Scrolling
+        // scrollingSpeed: 0,
+        css3: true,
+        // autoScrolling: false,
+        // scrollBar: false,
+        // easing: 'easeInQuart',
+        // easingcss3: 'ease',
+        // loopBottom: false,
+        // loopTop: false,
+        // loopHorizontal: true,
+        // continuousVertical: false,
+        // normalScrollElements: '#element1, .element2',
+        // scrollOverflow: false,
+        // touchSensitivity: 15,
+        // normalScrollElementTouchThreshold: 15,
+
+        // //Accessibility
+        keyboardScrolling: true,
+        // animateAnchor: true
+
+        // // Design
+        // controlArrows: true,
+        // verticalCentered: false,
+        // resize : true,
+        // // sectionsColor : ['#ccc', '#fff'],
+        // paddingTop: '3em',
+        // paddingBottom: '10px',
+        // fixedElements: '#header, .footer'
+        // responsive: 0
+
+        // //Custom selectors
+        // sectionSelector: '.section',
+        // slideSelector: '.slide',
+
+        // //events
+        // onLeave: function(index, nextIndex, direction){},
+        // afterLoad: function(anchorLink, index){},
+        // afterRender: function(){},
+        // afterResize: function(){},
+        // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        // onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+      });
+    });
+  }
 });

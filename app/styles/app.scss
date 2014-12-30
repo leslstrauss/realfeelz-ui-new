@@ -54,6 +54,10 @@
 // }
 // p {
 //   font: 15px/2 Georgia, Serif;
+//   }
+body {
+    color: #000000;
+}
 /* Style for our header texts
 * --------------------------------------- */
 h1{
@@ -80,7 +84,7 @@ h1{
     // height: 50px;
     display:block;
     width: 100%;
-    background: #333;
+    // background: #333;
     z-index:9;
     text-align:center;
     color: #f2f2f2;

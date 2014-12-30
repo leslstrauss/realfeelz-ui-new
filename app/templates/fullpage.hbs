@@ -1,30 +1,49 @@
 {{view 'fullpage-view'}}
-{{!-- {{view 'sticky-view'}} --}}
-{{!-- <div id="header">Header</div> --}}
+
+<div id="footer">
+  <form {{action "postStatement" newPost on="submit" }}>
+    {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+    <div id="recaptcha"></div>
+    <div class="status-text">
+      {{#if verifyingCaptcha}}
+      <p>Verifying Captcha...</p>
+      {{/if}} {{#if showingCaptcha}}
+      <p>Getting a Captcha...</p>
+      {{/if}} {{#if captchaVerified }}
+      <p>Now that we know you are a human, hit post again to share.</p>
+      {{/if}} {{#if tryAgain}}
+      <p>Try again...</p>
+      {{/if}}
+    </div>
+    <button class="button radius" type="submit">Post</button>
+  </form>
+</div>
+
 <div id="fullpage">
-  <div class="section">
-    <div class="slide">
-      <h1>RealFeelz</h1>
+  <div class="section " id="section0">
+    <div class="slide" id="slide1">
+      <div class="intro">
+        <h1>RealFeelz</h1>
+        <p>Anonymously share your true self</p>
+      </div>
     </div>
-    <div class="slide">
-
+    <div class="slide" id="slide2">
     </div>
-    <div class="slide">
-
+    <div class="slide" id="slide3">
     </div>
-    <div class="slide">
-
+    <div class="slide" id="slide4">
     </div>
-  </div>
-  <div class="section">
-    <div class="intro">
-      <h1>What's Real For You?</h1>
+    <div class="slide" id="slide5">
     </div>
   </div>
-  <div class="section">
+  <div class="section" id="section2">
     <div class="intro">
-      <h1>About Us</h1>
+      <h1>What's Real</h1>
+    </div>
+  </div>
+  <div class="section" id="section3">
+    <div class="intro">
+      <h1>About</h1>
     </div>
   </div>
 </div>
-{{!-- <div id="footer">Footer</div> --}}

@@ -4,10 +4,10 @@ export default Ember.View.extend({
   didInsertElement: function() {
     Ember.$(document).ready(function() {
       Ember.$('#fullpage').fullpage({
-        sectionsColor: ['#E6E6E6', '#B8B8B8', '#666666'],
+        sectionsColor: ['#4884A9', '#7D37A9', '#666666'],
         //Navigation
         // menu: false,
-        anchors:['firstSlide', 'secondSlide', '3rdPage'],
+        anchors:['index', 'whatsreal', 'about'],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['firstSlide', 'secondSlide', 'Third and last page'],
@@ -30,20 +30,20 @@ export default Ember.View.extend({
         // normalScrollElements: '#element1, .element2',
         // scrollOverflow: false,
         // touchSensitivity: 15,
-        normalScrollElementTouchThreshold: 15,
+        // normalScrollElementTouchThreshold: 15,
 
         // //Accessibility
         keyboardScrolling: true,
         // animateAnchor: true
 
         // // Design
-        controlArrows: true,
-        verticalCentered: true,
+        // controlArrows: true,
+        // verticalCentered: false,
         // resize : true,
         // // sectionsColor : ['#ccc', '#fff'],
-        paddingTop: '3em',
-        paddingBottom: '10px'
-        // fixedElements: '#header, .footer',
+        // paddingTop: '3em',
+        // paddingBottom: '10px',
+        // fixedElements: '#header, .footer'
         // responsive: 0
 
         // //Custom selectors

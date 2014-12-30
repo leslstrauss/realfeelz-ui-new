@@ -80894,7 +80894,8 @@ window.Modernizr = (function( window, document, undefined ) {
 		//Defines the delay to take place before being able to scroll to the next section
 		//BE CAREFUL! Not recommened to change it under 400 for a good behavior in laptops and
 		//Apple devices (laptops, mouses...)
-		var scrollDelay = 600;
+		var scrollDelay = 400;
+		// var scrollDelay = 600;
 
 		$.fn.fullpage.setAutoScrolling = function(value){
 			options.autoScrolling = value;

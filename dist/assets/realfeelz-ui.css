@@ -6347,6 +6347,21 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
+.vticker {
+  border: 1px solid red;
+  width: 400px; }
+
+.vticker ul {
+  padding: 0; }
+
+.vticker li {
+  list-style: none;
+  border-bottom: 1px solid green;
+  padding: 10px; }
+
+.et-run {
+  background: red; }
+
 * {
   margin: 0;
   padding: 0; }

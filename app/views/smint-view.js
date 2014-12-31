@@ -3,7 +3,7 @@
   export default Ember.View.extend({
     didInsertElement: function() {
       Ember.$(document).ready(function() {
-        $('.subMenu').smint({
+        Ember.$('.subMenu').smint({
           'scrollSpeed': 1000
         });
       });

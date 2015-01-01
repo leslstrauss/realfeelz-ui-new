@@ -1,0 +1,79 @@
+{{view 'fullpage-view'}}
+{{!-- {{view 'fullbackground-view'}} --}}
+{{!-- {{view 'easyticker-view'}} --}}
+
+
+{{!-- <button class="vis">SET VISIBLE 3</button>
+<button class="visall">SET VISIBLE ALL</button>
+
+<button class="up">UP</button>
+<button class="down">DOWN</button>
+<button class="cdirection">Change Direction</button> --}}
+
+{{!-- <div class="vticker">
+  <ul>
+    <li>Triangles can be made easily using CSS also without any images. This trick requires only div tags and some CSS works. To get this trick, just use the code below.</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+    <li>List 5 </li>
+    <li class="ww">Hey... Triangles can be made easily using CSS also without any images. This trick requires only div tags and some CSS works. To get this trick, just use the code below.</li>
+  </ul>
+</div> --}}
+
+{{!--   </section>
+</div> --}}
+{{!-- <div id="footer">
+  <form {{action "postStatement" newPost on="submit" }}>
+    {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+    <div id="recaptcha"></div>
+    <div class="status-text">
+      {{#if verifyingCaptcha}}
+      <p>Verifying Captcha...</p>
+      {{/if}} {{#if showingCaptcha}}
+      <p>Getting a Captcha...</p>
+      {{/if}} {{#if captchaVerified }}
+      <p>Now that we know you are a human, hit post again to share.</p>
+      {{/if}} {{#if tryAgain}}
+      <p>Try again...</p>
+      {{/if}}
+    </div>
+    <button class="button radius" type="submit">Post</button>
+  </form>
+</div> --}}
+
+<div id="fullpage">
+  <div class="section">
+    {{!-- <div class="slide" id="slide1"> --}}
+      <div class="intro">
+        <h1>RealFeelz</h1>
+        <p>Anonymously share your true self</p>
+      </div>
+    {{!--     </div>
+    <div class="slide" id="slide2">
+    </div>
+    <div class="slide" id="slide3">
+    </div>
+    <div class="slide" id="slide4">
+    </div>
+    <div class="slide" id="slide5">
+    </div> --}}
+  </div>
+
+  <div class="section">
+ {{!--    <div id="page-wrap" class="small-12 medium-10 large-8 centered-columns">
+    <img src="https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6" id="bg" alt=""> --}}
+      <ul>
+        {{#each}}
+        <p class="truths">{{body}}</p>
+        {{/each}}
+      </ul>
+    {{!-- </div> --}}
+  </div>
+
+  <div class="section">
+    <div class="intro">
+      <h1>About</h1>
+    </div>
+  </div>
+</div>

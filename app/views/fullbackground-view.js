@@ -1,15 +1,16 @@
 import Ember from 'ember';
-var $ = Ember.$;
 
 export default Ember.View.extend({
   didInsertElement: function() {
-    $(document).ready(function() {
-      $(function() {
+    Ember.$(document).ready(function() {
+      Ember.$(function() {
+
         var theWindow = $(window),
           $bg = $("#bg"),
           aspectRatio = $bg.width() / $bg.height();
 
         function resizeBg() {
+
           if ((theWindow.width() / theWindow.height()) < aspectRatio) {
             $bg
               .removeClass()
@@ -19,10 +20,13 @@ export default Ember.View.extend({
               .removeClass()
               .addClass('bgwidth');
           }
+
         }
+
         theWindow.resize(function() {
           resizeBg();
         }).trigger("resize");
+
       });
     });
   }

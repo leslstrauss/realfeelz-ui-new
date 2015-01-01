@@ -24,13 +24,15 @@ app.import('bower_components/foundation/js/foundation.js');
 
 app.import('bower_components/modernizr/modernizr.js');
 
-app.import('bower_components/fullpage.js/jquery.fullPage.js');
-app.import('bower_components/fullpage.js/jquery.fullPage.css');
+// app.import('bower_components/fullpage.js/jquery.fullPage.js');
+// app.import('bower_components/fullpage.js/jquery.fullPage.css');
 
-app.import('bower_components/jquery-sticky/jquery.sticky.js');
+// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
+// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
+// app.import('bower_components/jquery-sticky/jquery.sticky.js');
 
-app.import('vendor/jquery-easy-ticker-master/jquery.easy-ticker.js');
-app.import('vendor/jquery-easy-ticker-master/test/jquery.easing.min.js');
+// app.import('vendor/jquery-easy-ticker-master/jquery.easy-ticker.js');
+// app.import('vendor/jquery-easy-ticker-master/test/jquery.easing.min.js');
 // app.import('bower_components/flickerplate/js/flickerplate.js');
 // app.import('bower_components/flickerplate/js/jquery-v1.10.2.js');
 // app.import('bower_components/flickerplate/js/modernizr-custom-v2.7.1.js');

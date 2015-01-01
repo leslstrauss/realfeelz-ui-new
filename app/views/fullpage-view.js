@@ -7,10 +7,10 @@ export default Ember.View.extend({
         // sectionsColor: ['#4884A9', '#7D37A9', '#666666'],
         //Navigation
         // menu: false,
-        anchors:['realfeelz', 'application', 'about'],
+        // anchors:['realfeelz', 'application', 'about'],
         // navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide', 'Third and last page'],
+        // navigationPosition: 'right',
+        // navigationTooltips: ['firstSlide', 'secondSlide', 'Third and last page'],
         // slidesNavigation: true,
         // slidesNavPosition: 'bottom',
 
@@ -33,7 +33,7 @@ export default Ember.View.extend({
         // normalScrollElementTouchThreshold: 15,
 
         // //Accessibility
-        keyboardScrolling: true,
+        // keyboardScrolling: true,
         // animateAnchor: true
 
         // // Design

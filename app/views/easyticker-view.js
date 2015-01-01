@@ -38,14 +38,6 @@ export default Ember.View.extend({
         dd.start();
       });
 
-      Ember.$('.cdirection').click(function() {
-        tickObj.direction = 'down';
-      });
-
-      Ember.$('.start').click(function() {
-        tickObj.start();
-      });
-
     });
   }
 });

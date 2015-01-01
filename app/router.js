@@ -9,7 +9,7 @@ Router.map(function() {
 	this.route('whatsreal');
 	this.route('about');
   this.route('fullpage');
-	this.route('sticky');
+	this.route('malihu');
 });
 
 export default Router;

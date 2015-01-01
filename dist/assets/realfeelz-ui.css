@@ -6404,7 +6404,6 @@ img {
 
 #info p {
   font-size: 12px;
-  color: #bbb;
   padding: 6px 15px; }
 
 .callbacks, .callbacks + p, #examples, .content, .disable-destroy, .show-hide, .dialog, .all-themes-switch, .scrollTo {
@@ -6472,7 +6471,6 @@ code {
   font-family: monospace; }
 
 #examples {
-  background-color: #191919;
   padding: 5px;
   margin: 10px 0;
   overflow: hidden; }
@@ -6484,7 +6482,6 @@ code {
   overflow: auto;
   position: relative;
   padding: 20px;
-  background: #607D8B;
   margin: 10px;
   width: 740px;
   max-width: 97%;
@@ -6900,8 +6897,7 @@ hr + .content:nth-child(odd) h2 {
   background: #eb3755; }
 
 #examples.tabs, #examples.accordion, #examples.autocomplete {
-  padding: 5px 20px 20px 20px;
-  background-color: #333; }
+  padding: 5px 20px 20px 20px; }
 
 #examples.tabs h3, #examples.accordion h3 {
   color: #222;
@@ -6960,9 +6956,6 @@ hr + .content:nth-child(odd) h2 {
 
 .bootstrap #myTab .tab-pane {
   padding: 15px 5px 15px 15px; }
-
-body.colorbox-demo #cboxContent, body.colorbox-demo #cboxContent p, body.colorbox-demo #cboxContent a:hover {
-  color: #333; }
 
 .all-themes #examples {
   padding: 15px 0 0 15px; }

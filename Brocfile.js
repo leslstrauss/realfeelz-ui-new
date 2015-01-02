@@ -24,9 +24,9 @@ app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
 // app.import('bower_components/modernizr/modernizr.js');
 
-// app.import('bower_components/fullpage.js/jquery.fullPage.js');
+app.import('bower_components/fullpage.js/jquery.fullPage.js');
 // fullpage css incompatible with fullbackground page scrolling functionality
-// app.import('bower_components/fullpage.js/jquery.fullPage.css');
+app.import('bower_components/fullpage.js/jquery.fullPage.css');
 
 app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
 // app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js');

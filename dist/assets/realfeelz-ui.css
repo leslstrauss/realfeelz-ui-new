@@ -6347,57 +6347,52 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
-/* Style for our header texts
-  * --------------------------------------- */
 h1 {
   font-size: 5em;
   font-family: arial, helvetica;
-  color: #fff;
   margin: 0;
   padding: 0; }
 
+.intro p {
+  color: #fff; }
+
 /* Centered texts in each section
-  * --------------------------------------- */
+* --------------------------------------- */
 .section {
   text-align: center; }
 
-/* Backgrounds will cover all the section
-  * --------------------------------------- */
-#section0, #section1, #section2, #section3 {
-  background-size: cover;
-  background-attachment: fixed; }
-
-/* Defining each sectino background and styles
-  * --------------------------------------- */
-#section0 {
-  background-image: url('https://unsplash.imgix.net/photo-1416592525293-e65266465eb7?q=75&fm=jpg&s=c913af759e2a9dc0d6a671f4681466b6');
-  padding: 30% 0 0 0; }
-
 #section2 {
-  background-image: url('https://ununsplash.imgix.net/uploads/1413259835094dcdeb9d3/6e609595?q=75&fm=jpg&s=6a4fc66161293fc4a43a6ca6f073d1c5');
-  padding: 6% 0 0 0; }
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-#section3 {
-  background-image: url('https://unsplash.imgix.net/uploads/14129750380177d00cee4/42dcc5ea?q=75&fm=jpg&s=4df44c3e9218d417a29830dc89ebfe87');
-  padding: 6% 0 0 0; }
+/* Fixed header and footer.
+* --------------------------------------- */
+#header, #footer {
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 9;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0; }
 
-#section3 h1 {
-  color: #000; }
+#header {
+  top: 0px; }
 
-/*Adding background for the slides
-  * --------------------------------------- */
-#slide1 {
-  background-image: url('https://unsplash.imgix.net/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?q=75&fm=jpg&s=ac5413dc4bb4a7d6476c01e0a0ec78b6');
-  padding: 6% 0 0 0; }
-
-#slide2 {
-  background-image: url('https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?q=75&fm=jpg&s=1dead81fd24d998fd042090e89c6ca75');
-  padding: 6% 0 0 0; }
+#footer {
+  bottom: 0px; }
 
 /* Bottom menu
-  * --------------------------------------- */
+* --------------------------------------- */
+#infoMenu {
+  bottom: 80px; }
+
 #infoMenu li a {
-  color: #fff; }
+  color: #fff;
+  z-index: 999; }
 
 body {
   background-color: #222;

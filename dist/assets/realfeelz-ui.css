@@ -6348,11 +6348,39 @@ th.hide-for-touch {
  }
 
 body {
+  background-color: #222;
   color: #eee;
   font-size: 14px;
+  font-family: "Verdana", Geneva, sans-serif;
   margin: 0;
   padding: 0;
   min-width: 480px; }
+
+a {
+  color: inherit;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+h1, h2, h3 {
+  font-family: "Lobster Two", "Georgia", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #6bdaea; }
+
+hr {
+  background-color: transparent;
+  height: 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.9);
+  margin: 0;
+  clear: both; }
 
 header, #demo, footer {
   position: relative;
@@ -6404,6 +6432,7 @@ img {
 
 #info p {
   font-size: 12px;
+  color: #bbb;
   padding: 6px 15px; }
 
 .callbacks, .callbacks + p, #examples, .content, .disable-destroy, .show-hide, .dialog, .all-themes-switch, .scrollTo {
@@ -6471,6 +6500,8 @@ code {
   font-family: monospace; }
 
 #examples {
+  background-color: #191919;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 5px;
   margin: 10px 0;
   overflow: hidden; }
@@ -6482,6 +6513,7 @@ code {
   overflow: auto;
   position: relative;
   padding: 20px;
+  background: #333;
   margin: 10px;
   width: 740px;
   max-width: 97%;
@@ -6494,6 +6526,7 @@ code {
   display: none; }
 
 .content.light {
+  background-color: #ddd;
   color: #333; }
 
 .content hr {
@@ -6897,7 +6930,8 @@ hr + .content:nth-child(odd) h2 {
   background: #eb3755; }
 
 #examples.tabs, #examples.accordion, #examples.autocomplete {
-  padding: 5px 20px 20px 20px; }
+  padding: 5px 20px 20px 20px;
+  background-color: #333; }
 
 #examples.tabs h3, #examples.accordion h3 {
   color: #222;
@@ -6956,6 +6990,9 @@ hr + .content:nth-child(odd) h2 {
 
 .bootstrap #myTab .tab-pane {
   padding: 15px 5px 15px 15px; }
+
+body.colorbox-demo #cboxContent, body.colorbox-demo #cboxContent p, body.colorbox-demo #cboxContent a:hover {
+  color: #333; }
 
 .all-themes #examples {
   padding: 15px 0 0 15px; }

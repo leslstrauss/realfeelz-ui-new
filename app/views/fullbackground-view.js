@@ -5,8 +5,8 @@ export default Ember.View.extend({
     Ember.$(document).ready(function() {
       Ember.$(function() {
 
-        var theWindow = $(window),
-          $bg = $("#bg"),
+        var theWindow = Ember.$(window),
+          $bg = Ember.$("#bg"),
           aspectRatio = $bg.width() / $bg.height();
 
         function resizeBg() {

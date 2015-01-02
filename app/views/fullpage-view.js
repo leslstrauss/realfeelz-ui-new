@@ -4,16 +4,13 @@ export default Ember.View.extend({
   didInsertElement: function() {
     Ember.$(document).ready(function() {
       Ember.$('#fullpage').fullpage({
-        // anchors: ['firstPage'],
-        // sectionsColor: ['#4A6FB1'],
-        // autoScrolling: false,
-        sectionsColor: ['#4884A9', '#D55C2B', '#666666'],
+        // sectionsColor: ['#4884A9', '#D55C2B', '#666666'],
         //Navigation
         // menu: false,
-        // anchors:['realfeelz', 'application', 'about'],
-        // navigation: true,
-        // navigationPosition: 'right',
-        // navigationTooltips: ['firstSlide', 'secondSlide', 'Third and last page'],
+        anchors:['realfeelz', 'application', 'about'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide', 'Third and last page'],
         // slidesNavigation: true,
         // slidesNavPosition: 'bottom',
 
@@ -21,9 +18,9 @@ export default Ember.View.extend({
 
         //Scrolling
         // scrollingSpeed: 0,
-        css3: true,
+        css3: false,
         // autoScrolling: false,
-        // scrollBar: false,
+        // scrollBar: true,
         // easing: 'easeInQuart',
         // easingcss3: 'ease',
         // loopBottom: false,
@@ -41,7 +38,7 @@ export default Ember.View.extend({
 
         // // Design
         // controlArrows: true,
-        // verticalCentered: false,
+        verticalCentered: false,
         // resize : true,
         // // sectionsColor : ['#ccc', '#fff'],
         // paddingTop: '3em',

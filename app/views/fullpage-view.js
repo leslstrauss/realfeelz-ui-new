@@ -4,6 +4,9 @@ export default Ember.View.extend({
   didInsertElement: function() {
     Ember.$(document).ready(function() {
       Ember.$('#fullpage').fullpage({
+        // anchors: ['firstPage'],
+        // sectionsColor: ['#4A6FB1'],
+        // autoScrolling: false,
         sectionsColor: ['#4884A9', '#D55C2B', '#666666'],
         //Navigation
         // menu: false,

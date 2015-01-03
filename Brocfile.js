@@ -36,7 +36,7 @@ app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScroll
 app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
 // app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
 //
-// app.import('bower_components/jquery-sticky/jquery.sticky.js');
+app.import('bower_components/jquery-sticky/jquery.sticky.js');
 
 // app.import('vendor/jquery-easy-ticker-master/jquery.easy-ticker.js');
 // app.import('vendor/jquery-easy-ticker-master/test/jquery.easing.min.js');

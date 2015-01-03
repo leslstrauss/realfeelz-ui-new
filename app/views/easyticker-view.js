@@ -6,10 +6,10 @@ export default Ember.View.extend({
 
       var dd = Ember.$('.vticker').easyTicker({
         direction: 'up',
-        easing: 'swing',
-        speed: 'slow',
-        interval: 2000,
-        height: 'auto',
+        // easing: 'swing',
+        // speed: 'slow',
+        interval: 1000,
+        // height: 'auto',
         visible: 1,
         mousePause: 0,
         controls: {

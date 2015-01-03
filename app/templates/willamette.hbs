@@ -1,5 +1,6 @@
 {{view 'foundation-view'}}
 {{view 'malihu-view'}}
+{{view 'sticky-view'}}
 
 <header>
   <div class="row">
@@ -18,11 +19,11 @@
 </div> --}}
 
 <div class="section-hero section-bg-color1">
-  <div class="row">
+  <div class="row" id="sticker">
     <div class="small-12 medium-12 large-12 columns">
       <div class="download-box">
-        {{!-- <h3>What's Real For You Right Now?</h3> --}}
         <div id="mc_embed_signup">
+
           <form {{action "postStatement" newPost on="submit" }}>
             {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
             <div id="recaptcha"></div>
@@ -40,7 +41,16 @@
 
             <button class="button radius" type="submit">Post</button>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="section-hero section-bg-color1">
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <div class="download-box">
+          <div id="mc_embed_signup">
           <div id="demo">
             <section id="examples">
               <div id="content-1" class="content">
@@ -56,7 +66,6 @@
               </div>
             </section>
           </div>
-
         </div>
       </div>
     </div>

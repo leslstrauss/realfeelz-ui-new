@@ -7014,9 +7014,8 @@ Body
 
 /* line 391, ../scss/_custom.scss */
 .section-hero {
-  padding-top: 4em;
-  padding-bottom: 2.5em;
-  border-top: 1px solid #e6dddb;
+  padding-top: 0px;
+  padding-bottom: 0px;
   -webkit-transition: background-color 0.3s ease-out !important;
   -moz-transition: background-color 0.3s ease-out !important;
   transition: background-color 0.3s ease-out !important; }

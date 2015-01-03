@@ -1,6 +1,5 @@
 {{view 'foundation-view'}}
 {{view 'malihu-view'}}
-{{view 'sticky-view'}}
 
 <header>
   <div class="row">
@@ -18,12 +17,10 @@
   </div>
 </div> --}}
 
-<div class="section-hero section-bg-color1">
-  <div class="row" id="sticker">
-    <div class="small-12 medium-12 large-12 columns">
-      <div class="download-box">
-        <div id="mc_embed_signup">
-
+<div class="magellan-container" data-magellan-expedition="fixed";" >
+  <dl class="sub-nav">
+      <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
           <form {{action "postStatement" newPost on="submit" }}>
             {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
             <div id="recaptcha"></div>
@@ -38,12 +35,11 @@
                 <p>Try again...</p>
               {{/if}}
             </div>
-
             <button class="button radius" type="submit">Post</button>
           </form>
         </div>
       </div>
-    </div>
+    </dl>
   </div>
 
   <div class="section-hero section-bg-color1">

@@ -14,11 +14,11 @@ export default Ember.View.extend({
         // slidesNavigation: true,
         // slidesNavPosition: 'bottom',
 
-        // responsive: 900,
+        responsive: 900,
 
         //Scrolling
         // scrollingSpeed: 0,
-        css3: true,
+        // css3: true,
         autoScrolling: false,
         // scrollBar: true,
         // easing: 'easeInQuart',

@@ -6348,14 +6348,11 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
-.truths {
-  margin-right: 15px; }
+#whatsreal {
+  background: none !important; }
 
 .truths-container {
   padding-left: 0px !important; }
-
-ul {
-  margin-left: 0px !important; }
 
 #examples {
   padding: 5px;

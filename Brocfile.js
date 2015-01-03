@@ -31,9 +31,9 @@ app.import('bower_components/foundation/js/vendor/placeholder.js');
 // fullpage css incompatible with fullbackground page scrolling functionality
 // app.import('bower_components/fullpage.js/jquery.fullPage.css');
 
-// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
+app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
 // app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js');
-// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
+app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
 // app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
 //
 // app.import('bower_components/jquery-sticky/jquery.sticky.js');

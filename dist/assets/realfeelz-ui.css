@@ -6348,6 +6348,29 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
+.truths {
+  margin-right: 15px; }
+
+.truths-container {
+  padding-left: 0px !important; }
+
+ul {
+  margin-left: 0px !important; }
+
+#examples {
+  padding: 5px;
+  margin: 10px 0;
+  overflow: hidden; }
+
+.content {
+  overflow: auto;
+  position: relative;
+  width: auto;
+  height: 1000px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /*==================================================================================================
 Foundation Variables
 ==================================================================================================*/

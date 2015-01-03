@@ -4,7 +4,7 @@ export default Ember.View.extend({
   didInsertElement: function() {
     Ember.$(document).ready(function() {
       Ember.$(window).load(function() {
-        $("#content-1").mCustomScrollbar({
+        Ember.$("#content-1").mCustomScrollbar({
           theme:"minimal"
         });
         // var content = Ember.$("#content-1"),

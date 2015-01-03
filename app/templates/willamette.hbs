@@ -1,29 +1,25 @@
-{{view 'foundation-view'}}
-{{!-- {{view 'malihu-view'}} --}}
+{{view 'sticky-view'}}
+{{view 'fullbackground-view'}}
 
-<header>
-  <div class="row">
-    <div class="small-12 medium-12 large-12 columns">
-      <h2><a href="index.html">RealFeelz</a></h2>
+
+{{!-- <img src="https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?q=75&fm=jpg&s=1dead81fd24d998fd042090e89c6ca75" id="bg" alt=""> --}}
+<div id="page-wrap">
+
+  <header class="realfeelz">
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <h2>{{#link-to 'willamette'}}RealFeelz{{/link-to}}</h2>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-{{!-- <div class="section-headline">
+</div>
+
+<div id="header" class="section-hero section-bg-color1">
   <div class="row">
-    <div class="small-12 medium-12 large-12 large-centered columns">
-      <h1>What's Real For You Right Now?</h1>
-    </div>
-  </div>
-</div> --}}
-
-<div class="magellan-container" data-magellan-expedition="fixed";" >
-  <dl class="sub-nav">
-  <div class="section-hero section-bg-color1">
-      <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
-        <div class="download-box" id="whatsreal">
-          <div id="mc_embed_signup">
+    <div class="small-12 medium-10 large-10 small-centered columns">
+      <div class="download-box whatsreal">
+        <div id="mc_embed_signup">
           <form {{action "postStatement" newPost on="submit" }}>
             {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
             <div id="recaptcha"></div>
@@ -40,47 +36,44 @@
             </div>
             <button class="button radius" type="submit">Post</button>
           </form>
-          </div>
-          </div>
         </div>
       </div>
-      </div>
-    </dl>
+    </div>
   </div>
+</div>
+
+<div id="under">
 
   <div class="section-hero section-bg-color1">
     <div class="row">
-      <div class="small-12 medium-12 large-12 columns">
+      <div class="small-12 medium-10 large-10 small-centered columns">
         <div class="download-box">
           <div id="mc_embed_signup">
-{{!--           <div id="demo">
-            <section id="examples">
-              <div id="content-1" class="content"> --}}
-                <div class="row statement-container">
-                  <div class="small-12 medium-12 large-12 columns truths-container">
-                    <ul>
-                      {{#each}}
-                      <p class="truths">{{body}}</p>
-                      {{/each}}
-                    </ul>
-                  </div>
-                </div>
-              {{!-- </div>
-            </section>
-          </div> --}}
+
+            <div class="row statement-container">
+              <div class="small-12 medium-12 large-12 columns truths-container">
+                <ul>
+                  {{#each}}
+                  <p class="truths">{{body}}</p>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-<footer class="section-bg-color2">
-  <div class="row">
-    <div class="small-12 medium-12 large-12 columns">
-      <ul>
-        <li>&copy;2014 {{#link-to 'whatsreal'}}RealFeelz{{/link-to}}</li>
-        <li>{{#link-to 'about'}}About{{/link-to}}</a></li>
-      </ul>
+  <footer class="section-bg-color2">
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <ul>
+          <li>&copy;2014 {{#link-to 'whatsreal'}}RealFeelz{{/link-to}}</li>
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
 </div>

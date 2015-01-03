@@ -6348,25 +6348,39 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
-#whatsreal {
+#page-wrap {
+  background: url('https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?q=75&fm=jpg&s=1dead81fd24d998fd042090e89c6ca75') no-repeat center center fixed;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 20px !important;
+  padding: 20px;
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+  height: 100%; }
+
+#under {
+  position: absolute;
+  z-index: 1; }
+
+#header {
+  position: absolute;
+  z-index: 2; }
+
+.whatsreal {
   background: none !important; }
+
+.section-bg-color1 {
+  background: none !important; }
+
+button {
+  margin-bottom: 0px; }
 
 .truths-container {
   padding-left: 0px !important; }
-
-#examples {
-  padding: 5px;
-  margin: 10px 0;
-  overflow: hidden; }
-
-.content {
-  overflow: auto;
-  position: relative;
-  width: auto;
-  height: 1000px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
 
 /*==================================================================================================
 Foundation Variables

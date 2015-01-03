@@ -6,6 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('willamette');
 	this.route('whatsreal');
 	this.route('about');
   this.route('fullpage');

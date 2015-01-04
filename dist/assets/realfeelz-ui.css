@@ -6348,6 +6348,15 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
+.feature-box {
+  border: 0px !important; }
+
+.section-features-pricing {
+  border-top: 0px !important; }
+
+.small-centered {
+  padding: 0px !important; }
+
 .flexrow {
   display: -webkit-flex;
   display: flex;
@@ -6359,28 +6368,43 @@ th.hide-for-touch {
   -webkit-justify-content: center;
   justify-content: center; }
 
+.dlb-form {
+  padding-top: 20px !important;
+  background-color: #683422 !important; }
+
+.download-box {
+  padding: 30px !important; }
+
 .truths {
   z-index: 1 !important; }
+
+ul {
+  margin: 0px !important; }
 
 #sticky_item {
   z-index: 2 !important; }
 
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.bgwidth {
+  width: 100%; }
+
+.bgheight {
+  height: 100%; }
+
 #page-wrap {
-  background: url('https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?q=75&fm=jpg&s=1dead81fd24d998fd042090e89c6ca75') no-repeat center center fixed;
   position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 20px !important;
-  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
-  height: 100%; }
-
-.realfeelz {
-  background-color: #000000; }
+  height: 100% !important; }
 
 /*==================================================================================================
 Foundation Variables
@@ -6983,13 +7007,7 @@ Body
   transition: background-color 0.3s ease-out !important; }
 
 /* line 350, ../scss/_custom.scss */
-.section-bg-color1 {
-  background-color: #fefefe; }
-
 /* line 354, ../scss/_custom.scss */
-.section-bg-color2 {
-  background-color: #f5f1f0; }
-
 /* line 358, ../scss/_custom.scss */
 .section-headline h1 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7226,9 +7244,9 @@ Download Box
 /* line 589, ../scss/_custom.scss */
 .download-box {
   background-color: #3a3e49;
-  padding: 2em;
   padding-bottom: 1em;
-  border-radius: 8px;
+  padding-right: 1em;
+  padding-left: 1em;
   -webkit-transition: background-color 0.3s ease-out !important;
   -moz-transition: background-color 0.3s ease-out !important;
   transition: background-color 0.3s ease-out !important; }
@@ -7262,8 +7280,7 @@ Footer
 /* line 626, ../scss/_custom.scss */
 footer {
   padding-top: 6em;
-  padding-bottom: 4em;
-  border-top: 1px solid #e6dddb; }
+  padding-bottom: 4em; }
 
 /* line 632, ../scss/_custom.scss */
 footer ul {

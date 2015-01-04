@@ -1,91 +1,96 @@
 @import 'bower_components/foundation/scss/normalize';
 @import 'bower_components/foundation/scss/foundation';
 
+  // body {
+  //   background: url('https://ununsplash.imgix.net/uploads/1413259835094dcdeb9d3/6e609595?q=75&fm=jpg&s=6a4fc66161293fc4a43a6ca6f073d1c5') no-repeat center center fixed;
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: cover;
+  // }
+
+.feature-box {
+  border: 0px !important;
+}
+
+.section-features-pricing {
+  border-top: 0px !important;
+}
+
+.small-centered {
+  padding: 0px !important;
+  // margin: 0px !important;
+}
 .flexrow {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row; /* works with row or column */
-   flex-direction: row;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.dlb-form {
+  padding-top: 20px !important;
+  background-color: #683422 !important;
+}
+.download-box {
+  padding: 30px !important;
 }
 
 .truths {
   z-index: 1 !important;
-  // position: absolute;
 }
 
+ul {
+  margin: 0px !important;
+}
 #sticky_item {
   z-index: 2 !important;
 }
-
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+#bg {
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.bgwidth {
+  width: 100%;
+}
+.bgheight {
+  height: 100%;
+}
 #page-wrap {
-  background: url('https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?q=75&fm=jpg&s=1dead81fd24d998fd042090e89c6ca75') no-repeat center center fixed;
+  // background: url('http://static.simpledesktops.com/uploads/desktops/2014/10/15/tetons-at-night.png') no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
   position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   // width: 400px;
-  margin: 20px !important;
-  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   // background: white;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
-  height: 100%;
+  height: 100% !important;
 }
-
-.realfeelz {
-  background-color: #000000;
-}
-
-// [data-magellan-expedition] {
-//   background: #000000;
+// height: 100% !important;
+// .realfeelz {
+//   background-color: #000000;
 // }
-
-// [data-magellan-expedition-clone] {
-//   display: none;
-// }
-
-// .whatsreal {
-//   padding-left: 0px !important;
-//   padding-right: 0px !important;
-//   padding-top: 0px !important;
-// }
-
-// .realz {
-//   padding-left: 0px !important;
-//   padding-right: 0px !important;
-// }
-
-// .whatsreal {
-//   background: none !important;
-// }
-
-
-// .truths-container {
-//   padding-left: 0px !important;
-// }
-
-// .vticker{
-//   border: 1px solid red;
-//   width: 400px;
-// }
-// .vticker ul{
-//   padding: 0;
-// }
-// .vticker li{
-//   list-style: none;
-//   border-bottom: 1px solid white;
-//   padding: 10px;
-// }
-// .et-run{
-//   background: red;
-// }
-//
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic);
 /*==================================================================================================
 Foundation Variables
@@ -777,12 +782,12 @@ Body
 /* line 350, ../scss/_custom.scss */
 
 .section-bg-color1 {
-  background-color: #fefefe;
+  // background-color: #fefefe;
 }
 /* line 354, ../scss/_custom.scss */
 
 .section-bg-color2 {
-  background-color: #f5f1f0;
+  // background-color: #f5f1f0;
 }
 /* line 358, ../scss/_custom.scss */
 
@@ -1061,9 +1066,11 @@ Download Box
 
 .download-box {
   background-color: #3a3e49;
-  padding: 2em;
+  // padding: 2em;
   padding-bottom: 1em;
-  border-radius: 8px;
+  padding-right: 1em;
+  padding-left: 1em;
+  // border-radius: 8px;
   -webkit-transition: background-color 0.3s ease-out !important;
   -moz-transition: background-color 0.3s ease-out !important;
   transition: background-color 0.3s ease-out !important;
@@ -1104,7 +1111,7 @@ Footer
 footer {
   padding-top: 6em;
   padding-bottom: 4em;
-  border-top: 1px solid #e6dddb;
+  // border-top: 1px solid #e6dddb;
 }
 /* line 632, ../scss/_custom.scss */
 

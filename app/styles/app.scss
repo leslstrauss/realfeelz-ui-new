@@ -1,31 +1,25 @@
 @import 'bower_components/foundation/scss/normalize';
 @import 'bower_components/foundation/scss/foundation';
 
-// .realfeelz {
-//   margin: 0;
-//   padding: 0;
-// }
-// #bg {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-// }
-// .bgwidth {
-//   width: 100%;
-// }
-// .bgheight {
-//   height: 100%;
-// }
-// #page-wrap {
-//   position: relative;
-//   // width: 400px;
-//   margin: 50px auto;
-//   padding: 20px;
-//   background: white;
-//   -moz-box-shadow: 0 0 20px black;
-//   -webkit-box-shadow: 0 0 20px black;
-//   box-shadow: 0 0 20px black;
-// }
+.flexrow {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.truths {
+  z-index: 1 !important;
+  // position: absolute;
+}
+
+#sticky_item {
+  z-index: 2 !important;
+}
 
 #page-wrap {
   background: url('https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?q=75&fm=jpg&s=1dead81fd24d998fd042090e89c6ca75') no-repeat center center fixed;
@@ -36,9 +30,7 @@
   background-size: cover;
   // width: 400px;
   margin: 20px !important;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  padding: 20px;
   // background: white;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
@@ -46,56 +38,38 @@
   height: 100%;
 }
 
-[data-magellan-expedition] {
-  background: #000000;
+.realfeelz {
+  background-color: #000000;
 }
 
-[data-magellan-expedition-clone] {
-  display: none;
-}
-
-.whatsreal {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  padding-top: 0px !important;
-}
-
-.realz {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
-.whatsreal {
-  background: none !important;
-}
-
-.section-bg-color1 {
-  background: #000000 !important;
-}
-
-button {
-  margin-bottom: 0px !important;
-  padding: 0px;
-}
-.truths {
-  // color: #000000 !important;
-  // border-right-width: 10px;
-  // margin-right: 15px;
-}
-.truths-container {
-  padding-left: 0px !important;
-}
-.statement-container {
-  // margin-left: 0px !important;
-  // margin-right: 0px !important;
-}
-// ul {
-//   margin-left: 0px !important;
+// [data-magellan-expedition] {
+//   background: #000000;
 // }
-//
-// li {
-//   color: #ffffff;
+
+// [data-magellan-expedition-clone] {
+//   display: none;
 // }
+
+// .whatsreal {
+//   padding-left: 0px !important;
+//   padding-right: 0px !important;
+//   padding-top: 0px !important;
+// }
+
+// .realz {
+//   padding-left: 0px !important;
+//   padding-right: 0px !important;
+// }
+
+// .whatsreal {
+//   background: none !important;
+// }
+
+
+// .truths-container {
+//   padding-left: 0px !important;
+// }
+
 // .vticker{
 //   border: 1px solid red;
 //   width: 400px;

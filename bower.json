@@ -24,7 +24,8 @@
     "jquery-sticky": "~1.0.1",
     "malihu-custom-scrollbar-plugin": "~3.0.7",
     "jquery.cookie": "~1.4.1",
-    "jquery-placeholder": "~2.1.0"
+    "jquery-placeholder": "~2.1.0",
+    "sticky-kit": "~1.1.1"
   },
   "resolutions": {
     "chai": "~1.10.0",

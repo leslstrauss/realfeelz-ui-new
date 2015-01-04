@@ -21,9 +21,11 @@ var app = new EmberApp();
 app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
 // app.import('vendor/stickUp/stickUp.js');
+//
+app.import('bower_components/sticky-kit/jquery.sticky-kit.js');
 
-app.import('bower_components/foundation/js/foundation.js');
-app.import('bower_components/foundation/js/foundation/foundation.magellan.js');
+// app.import('bower_components/foundation/js/foundation.js');
+// app.import('bower_components/foundation/js/foundation/foundation.magellan.js');
 // app.import('bower_components/foundation/js/foundation/foundation.topbar.js');
 // app.import('bower_components/foundation/js/vendor/modernizr.js');
 // app.i`mport('bower_components/foundation/js/vendor/fastclick.js');

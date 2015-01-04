@@ -1,9 +1,9 @@
-{{view 'foundation-view'}}
-{{!-- {{view 'stickup-view'}} --}}
+{{!-- {{view 'foundation-view'}} --}}
+{{view 'stickykit-view'}}
 {{view 'fullbackground-view'}}
 
-
 {{!-- <img src="https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?q=75&fm=jpg&s=1dead81fd24d998fd042090e89c6ca75" id="bg" alt=""> --}}
+
 <div id="page-wrap">
 
   <header class="realfeelz">
@@ -14,69 +14,63 @@
     </div>
   </header>
 
-  </div>
+</div>
 
-  <div data-magellan-expedition="fixed">
-    <div class="section-hero section-bg-color1">
+{{!-- <div class="magellan-container" data-magellan-expedition="fixed">
+  <dl class="sub-nav"> --}}
+  <div id="sticky_item">
+    <div class="section-hero section-bg-color1 form-bg">
       <div class="row">
-        <div class="small-12 medium-10 large-10 small-centered columns realz">
-          <div class="download-box whatsreal">
-            <div id="mc_embed_signup">
+        <div class="small-12 medium-10 large-10 small-centered columns">
+          {{!-- <div class="download-box"> --}}
+            {{!-- <div id="mc_embed_signup"> --}}
               <form {{action "postStatement" newPost on="submit" }}>
                 {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
                 <div id="recaptcha"></div>
                 <div class="status-text">
                   {{#if verifyingCaptcha}}
-                    <p>Verifying Captcha...</p>
+                  <p>Verifying Captcha...</p>
                   {{/if}} {{#if showingCaptcha}}
-                    <p>Getting a Captcha...</p>
+                  <p>Getting a Captcha...</p>
                   {{/if}} {{#if captchaVerified }}
-                    <p>Now that we know you are a human, hit post again to share.</p>
+                  <p>Now that we know you are a human, hit post again to share.</p>
                   {{/if}} {{#if tryAgain}}
-                    <p>Try again...</p>
+                  <p>Try again...</p>
                   {{/if}}
                 </div>
                 <button class="button radius" type="submit">Post</button>
               </form>
-            </div>
-          </div>
+            {{!-- </div> --}}
+          {{!-- </div> --}}
         </div>
       </div>
     </div>
-  </div>
+  </dl>
+</div>
 
-{{!-- <div id="under"> --}}
-
-  <div class="section-hero section-bg-color1">
-    <div class="row">
-      <div class="small-12 medium-10 large-10 small-centered columns">
-        <div class="download-box">
-          <div id="mc_embed_signup">
-
-            <div class="row statement-container">
-              <div class="small-12 medium-12 large-12 columns truths-container">
-                <ul>
-                  {{#each}}
-                  <p class="truths">{{body}}</p>
-                  {{/each}}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="section-hero section-bg-color1">
+  <div class="flexrow">
+    <div class="small-12 medium-10 large-10 small-centered columns">
+      {{!-- <div class="download-box"> --}}
+        {{!-- <div id="mc_embed_signup"> --}}
+          <ul>
+            {{#each}}
+            <p class="truths">{{body}}</p>
+            {{/each}}
+          </ul>
+        {{!-- </div> --}}
+      {{!-- </div> --}}
     </div>
   </div>
+</div>
 
-  <footer class="section-bg-color2">
-    <div class="row">
-      <div class="small-12 medium-12 large-12 columns">
-        <ul>
-          <li>&copy;2014 {{#link-to 'whatsreal'}}RealFeelz{{/link-to}}</li>
-          <li>{{#link-to 'about'}}About{{/link-to}}</li>
-        </ul>
-      </div>
+<footer class="section-bg-color2">
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+      <ul>
+        <li>&copy;2014 {{#link-to 'whatsreal'}}RealFeelz{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+      </ul>
     </div>
-  </footer>
-
-{{!-- </div> --}}
+  </div>
+</footer>

@@ -6356,28 +6356,38 @@ th.hide-for-touch {
   -o-background-size: cover;
   background-size: cover;
   margin: 20px !important;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
   height: 100%; }
 
-#under {
-  position: absolute;
-  z-index: 1; }
+[data-magellan-expedition] {
+  background: #000000; }
 
-#header {
-  position: absolute;
-  z-index: 2; }
+[data-magellan-expedition-clone] {
+  display: none; }
+
+.whatsreal {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important; }
+
+.realz {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
 
 .whatsreal {
   background: none !important; }
 
 .section-bg-color1 {
-  background: none !important; }
+  background: #000000 !important; }
 
 button {
-  margin-bottom: 0px; }
+  margin-bottom: 0px !important;
+  padding: 0px; }
 
 .truths-container {
   padding-left: 0px !important; }

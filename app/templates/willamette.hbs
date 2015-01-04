@@ -1,4 +1,5 @@
-{{view 'sticky-view'}}
+{{view 'foundation-view'}}
+{{!-- {{view 'stickup-view'}} --}}
 {{view 'fullbackground-view'}}
 
 
@@ -13,36 +14,38 @@
     </div>
   </header>
 
-</div>
+  </div>
 
-<div id="header" class="section-hero section-bg-color1">
-  <div class="row">
-    <div class="small-12 medium-10 large-10 small-centered columns">
-      <div class="download-box whatsreal">
-        <div id="mc_embed_signup">
-          <form {{action "postStatement" newPost on="submit" }}>
-            {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
-            <div id="recaptcha"></div>
-            <div class="status-text">
-              {{#if verifyingCaptcha}}
-                <p>Verifying Captcha...</p>
-              {{/if}} {{#if showingCaptcha}}
-                <p>Getting a Captcha...</p>
-              {{/if}} {{#if captchaVerified }}
-                <p>Now that we know you are a human, hit post again to share.</p>
-              {{/if}} {{#if tryAgain}}
-                <p>Try again...</p>
-              {{/if}}
+  <div data-magellan-expedition="fixed">
+    <div class="section-hero section-bg-color1">
+      <div class="row">
+        <div class="small-12 medium-10 large-10 small-centered columns realz">
+          <div class="download-box whatsreal">
+            <div id="mc_embed_signup">
+              <form {{action "postStatement" newPost on="submit" }}>
+                {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+                <div id="recaptcha"></div>
+                <div class="status-text">
+                  {{#if verifyingCaptcha}}
+                    <p>Verifying Captcha...</p>
+                  {{/if}} {{#if showingCaptcha}}
+                    <p>Getting a Captcha...</p>
+                  {{/if}} {{#if captchaVerified }}
+                    <p>Now that we know you are a human, hit post again to share.</p>
+                  {{/if}} {{#if tryAgain}}
+                    <p>Try again...</p>
+                  {{/if}}
+                </div>
+                <button class="button radius" type="submit">Post</button>
+              </form>
             </div>
-            <button class="button radius" type="submit">Post</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div id="under">
+{{!-- <div id="under"> --}}
 
   <div class="section-hero section-bg-color1">
     <div class="row">
@@ -76,4 +79,4 @@
     </div>
   </footer>
 
-</div>
+{{!-- </div> --}}

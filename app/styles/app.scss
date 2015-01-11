@@ -457,7 +457,7 @@ Global
 /* line 78, ../scss/_custom.scss */
 
 html {
-  background-color: #f5f1f0 !important;
+  // background-color: #f5f1f0 !important;
 }
 /* line 82, ../scss/_custom.scss */
 
@@ -654,7 +654,7 @@ Header & Nav
 /* line 244, ../scss/_custom.scss */
 
 header {
-  background-color: #3e424d;
+  // background-color: #3e424d;
   padding-top: 3em;
   padding-bottom: 2.5em;
 }
@@ -790,6 +790,10 @@ Body
   // background-color: #f5f1f0;
 }
 /* line 358, ../scss/_custom.scss */
+
+.section-bg-color2 {
+  background-color: #f5f1f0;
+}
 
 .section-headline h1 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1131,7 +1135,7 @@ footer li {
   display: inline-block;
   padding-left: 1em;
   margin-right: 1em;
-  color: #373b44;
+  // color: #373b44;
   margin-bottom: 1em;
 }
 /* line 651, ../scss/_custom.scss */
